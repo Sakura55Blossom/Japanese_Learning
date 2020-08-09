@@ -1,69 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sakura-Go</title>
-	<link rel="stylesheet" href="japanese.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sakura-Go</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="japanese.css">
 </head>
+
 <body>
 
 <header>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        
+          <div class= "navbar-brand"> 
+          <a href="index.html"><h1>Sakura-Go 桜語</h1></a>
+        </div>
 
-   <h1>Sakura-Go 桜語</h1>
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+       </button>
     
-   <nav id="nav-bar">
-     <ul>
-       <li><a href="#" class="nav-link">Kanji</a></li>
-       <li><a href="#" class="nav-link">Vocab</a></li>
-       <li><a href="#" class="nav-link">Hiragana</a></li>
-       <li><a href="#" class="nav-link">Katakana</a></li>
-     </ul>
-   </nav>
+      </div> <!-- .navbar-header -->
 
+    <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">
+                <span>漢字</span><br class="hidden-xs"> Kanji</a>
+            </li>
+            <li>
+              <a href="#">
+                <span>単語</span><br class="hidden-xs"> Vocab</a>
+            </li>
+            <li>
+              <a href="#">
+                <span>ひらがな</span><br class="hidden-xs"> Hiragana</a>
+            </li>
+            <li>
+              <a href="#">
+                <span>カタカナ</span><br class="hidden-xs"> Katakana</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
  </header>
 
- <div id="blossom-image"></div>
+    <div id="blossom-image"></div>
 
- <section id="about-site" class="text">
- 	<h2>About This Site</h2>
- 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus justo vitae iaculis posuere. Praesent faucibus ante id dolor tincidunt, nec vestibulum velit tristique. Cras euismod egestas augue, euismod efficitur purus sodales sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi eu arcu odio. Nulla luctus elementum aliquet. Donec ac diam ut augue bibendum sodales. Etiam placerat ac lacus vitae condimentum. Praesent vehicula, quam at fringilla vestibulum, nulla metus sollicitudin mauris, nec pellentesque mi mauris vitae urna. Nulla non diam nec lectus porttitor suscipit. Aliquam eu ante justo. Quisque nibh elit, molestie ac nibh at, commodo ullamcorper orci.</p>
- </section>
+ <main id="main-content" class="container-fluid">
 
-<section id="about-japanese" class="text">
- 	<h2>About the Japanese Writing System</h2>
- 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus justo vitae iaculis posuere. Praesent faucibus ante id dolor tincidunt, nec vestibulum velit tristique. Cras euismod egestas augue, euismod efficitur purus sodales sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi eu arcu odio. Nulla luctus elementum aliquet. Donec ac diam ut augue bibendum sodales. Etiam placerat ac lacus vitae condimentum. Praesent vehicula, quam at fringilla vestibulum, nulla metus sollicitudin mauris, nec pellentesque mi mauris vitae urna. Nulla non diam nec lectus porttitor suscipit. Aliquam eu ante justo. Quisque nibh elit, molestie ac nibh at, commodo ullamcorper orci.</p>
- </section>
+  <section id="about-site" class="text-center">
+  <h2>About This Site</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus justo vitae iaculis posuere. Praesent faucibus ante id dolor tincidunt, nec vestibulum velit tristique. Cras euismod egestas augue, euismod efficitur purus sodales sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi eu arcu odio. Nulla luctus elementum aliquet. Donec ac diam ut augue bibendum sodales. Etiam placerat ac lacus vitae condimentum. Praesent vehicula, quam at fringilla vestibulum, nulla metus sollicitudin mauris, nec pellentesque mi mauris vitae urna. Nulla non diam nec lectus porttitor suscipit. Aliquam eu ante justo. Quisque nibh elit, molestie ac nibh at, commodo ullamcorper orci.</p>
+  </section>
 
-<div class="row">
-  <div class="col-lg-3 col-md-6 col-s-12">
-    <div id="kanji" class="link-tiles">
-      <h3>漢字</h3>
-      <h4 id="title-kanji">Kanji</h4>
-  	</div>
-  </div>
-  <div class="col-lg-3 col-md-6 col-s-12">
-  	<div id="vocab" class="link-tiles">
-  		<h3>単語</h3>
-  		<h4 id="title-vocab">Vocab</h4>
-  	</div>
-  </div>
-  <div class="col-lg-3 col-md-6 col-s-12">
-    <div id="hiragana" class="link-tiles">
-      <h3>ひらがな</h3>
-      <h4 id="title-hiragana">Hiragana</h4>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-6 col-s-12">
-    <div id="katakana" class="link-tiles">
-      <h3>カタカナ</h3>
-      <h4 id="title-katakana">Katakana</h4>
-    </div>
-  </div>
-</div>
+  <section id="about-japanese" class="text-center">
+  <h2>About the Japanese Writing System</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus justo vitae iaculis posuere. Praesent faucibus ante id dolor tincidunt, nec vestibulum velit tristique. Cras euismod egestas augue, euismod efficitur purus sodales sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi eu arcu odio. Nulla luctus elementum aliquet. Donec ac diam ut augue bibendum sodales. Etiam placerat ac lacus vitae condimentum. Praesent vehicula, quam at fringilla vestibulum, nulla metus sollicitudin mauris, nec pellentesque mi mauris vitae urna. Nulla non diam nec lectus porttitor suscipit. Aliquam eu ante justo. Quisque nibh elit, molestie ac nibh at, commodo ullamcorper orci.</p>
+  </section>
 
-<footer>
-	<p>some text</p>
-</footer>
-</body>
+    <div id= "main-links" class="container">
+      
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 col-xs-12 mx-auto">
+          <section id= "kanji" class="text-center link-tiles">
+            <h3>漢字</h3>
+          <h4 id="title-kanji">Kanji</h4>
+        </section>
+        </div>
+
+         <div class="col-md-3 col-sm-6 col-xs-12 mx-auto">
+          <section id= "vocab" class="text-center link-tiles">
+            <h3>単語</h3>
+        <h4 id="title-vocab">Vocab</h4>
+        </section>
+        </div>
+
+         <div class="col-md-3 col-sm-6 col-xs-12 mx-auto">
+          <section id= "hiragana" class="text-center link-tiles">
+            <h3>ひらがな</h3>
+          <h4 id="title-hiragana">Hiragana</h4>
+        </section>
+        </div>
+
+         <div class="col-md-3 col-sm-6 col-xs-12 mx-auto">
+          <section id= "katakana" class="text-center link-tiles">
+            <h3>カタカナ</h3>
+          <h4 id="title-katakana">Katakana</h4>
+        </section>
+        </div>
+
+      </div> <!--row-->
+
+    </div> <!--main-links-->
+  </main>
+ </body>
 </html>
